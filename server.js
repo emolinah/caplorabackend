@@ -4,7 +4,8 @@ const path = require('path');
 
 const db = require('./models');
 const KQuery = require('./middlewares/kquery.js');
-//const KSEE = require('./middlewares/KSSE.js'); 
+const kswagger = require('./middlewares/kswagger.js');
+//const KSEE = require('./middlewares/KSSE.js');
 
 const app = express();
 
@@ -79,6 +80,9 @@ require('./models');
 
 // Rutas
 require('./middlewares/kroutes.js').loadRoutes(app);
+
+// Swagger
+kswagger.setup(app);
 
 // API
 const PORT = process.env.PORT || 8080;

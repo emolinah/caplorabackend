@@ -24,6 +24,7 @@
     "pdf-lib": "^1.17.1",
     "puppeteer-core": "^24.1.1",
     "sequelize": "^6.33.0",
+    "swagger-ui-express": "^5.0.1",
     "uninstall": "^0.0.0"
   },
   "devDependencies": {

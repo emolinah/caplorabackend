@@ -63,7 +63,7 @@ mysql -u root -p -e "CREATE DATABASE caplora2;"
 node server.js
 ```
 
-El servidor queda disponible en `http://localhost:8080`.
+El servidor queda disponible en `http://localhost:8081`.
 
 ## Variables de entorno
 
@@ -71,7 +71,7 @@ La base de datos puede configurarse mediante variables de entorno:
 
 | Variable | Default | Descripción |
 |---|---|---|
-| `PORT` | `8080` | Puerto del servidor |
+| `PORT` | `8081` | Puerto del servidor |
 | `DB_HOST` | `localhost` | Host MySQL |
 | `DB_PORT` | `3306` | Puerto MySQL |
 | `DB_USER` | `root` | Usuario MySQL |
@@ -102,7 +102,7 @@ docker compose up -d --build
 docker compose logs -f app
 ```
 
-La API quedará disponible en `http://localhost:8080`.
+La API quedará disponible en `http://localhost:8081`.
 
 > **Nota:** Editar las contraseñas de MySQL en `docker-compose.yml` antes de desplegar en producción.
 

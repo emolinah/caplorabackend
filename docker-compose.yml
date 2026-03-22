@@ -4,9 +4,9 @@ services:
     container_name: caplora_backend
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8081:8081"
     environment:
-      - PORT=8080
+      - PORT=8081
       - DB_HOST=db
       - DB_PORT=3306
       - DB_USER=caplora

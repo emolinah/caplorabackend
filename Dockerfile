@@ -35,6 +35,6 @@ COPY . .
 # Crear directorio de uploads
 RUN mkdir -p uploads
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD ["node", "server.js"]
